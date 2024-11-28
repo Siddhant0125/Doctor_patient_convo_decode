@@ -6,10 +6,10 @@ import whisper
 import os
 from io import BytesIO
 from groq import Groq 
-
+import openai
 # Set up proxies (if required)
-os.environ["HTTP_PROXY"] = "http://proxy_url:proxy_port"
-os.environ["HTTPS_PROXY"] = "http://proxy_url:proxy_port"
+#os.environ["HTTP_PROXY"] = "http://proxy_url:proxy_port"
+#os.environ["HTTPS_PROXY"] = "http://proxy_url:proxy_port"
 
 #api_key = st.secrets["API_KEY"]
 
