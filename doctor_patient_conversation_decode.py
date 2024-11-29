@@ -15,7 +15,8 @@ import openai
 
 # Initialize Groq API client
 #client = Groq(api_key=api_key)
-client = Groq(api_key=st.secrets["API_KEY"])
+api_key=st.secrets["API_KEY"]
+client = Groq()
 
 # Load the Whisper model
 @st.cache_resource
