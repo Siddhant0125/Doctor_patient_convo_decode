@@ -8,6 +8,8 @@ from io import BytesIO
 from groq import Groq 
 import openai
 
+os.environ["HTTP_PROXY"] = "http://proxy:8501"
+os.environ["HTTPS_PROXY"] = "https://proxy:8501"
 api_key = st.secrets["GROQ_API_KEY"]
 
 # Initialize Groq API client
